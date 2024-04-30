@@ -1,0 +1,318 @@
+p{
+  font-size: 20pt;
+}
+h1{
+  font-size: 30pt;
+}
+
+h2{
+  font-size: 20pt;
+}
+
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* css grid for moble */
+.container {
+  display: grid;
+  grid-template-columns: auto ;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  " header  "
+    " aside  "
+    "main  "
+    "footer  ";
+}
+
+.header {
+  grid-area: header;
+  background-color: cornsilk;
+
+  padding: 10px;
+}
+
+
+
+
+aside{
+  display:grid;
+  grid-area: aside;
+  background-color:cornsilk;
+ 
+}
+
+.main {
+  grid-area: main;
+  padding: 20px;
+  background-color: cornsilk;
+  overflow: auto;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: cornsilk;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* end of grid for mobile */
+
+/* css grid for desktop */
+@media (min-width: 768px) {
+  .grid-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto 1fr auto ;
+          grid-template-areas:
+              "header header"
+              "aside aside"
+              "main main"
+              "footer footer";
+            width: 100%;
+  }
+  
+  .main{
+  display: flex;
+  justify-content: space-evenly;
+  width: 97%;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+ 
+.grid1{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.box{
+  margin: 0px 50px 0px 50px;
+}
+
+.grid2{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.box2{
+  margin: 0px 50px 0px 50px;
+}
+
+
+}
+
+/* header stuff*/
+.container3{
+  display: flex;
+  justify-content: column;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  
+}
+
+.image-text7 {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  background-image: url(../image\ 10.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+ 
+}
+
+.container4{
+  display: flex;
+  justify-self: left;
+  font-size: larger;
+ width: 100%;
+}
+
+.nav-collapse{
+  display: flex;
+  justify-self: right;
+  background-color: white;
+}
+
+/* header stuff*/
+
+
+
+
+/* for my three images */
+/* Afor the first image */
+.main{
+  background-color: cornsilk;
+ display: flex;
+}
+
+.container{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ 
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 300px;
+
+ }
+
+/* for my three text messages */
+.text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 3%;
+}
+
+.text2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 3%;
+}
+
+.text3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 3%;
+}
+/* end */
+
+/* deals with the flex box for all of my images */
+.image-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 100%;
+  margin: 20px;
+  background-image: url(../image4.png);
+  background-repeat: no-repeat;
+  background-image: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-text2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 100%;
+  margin: 20px;
+  background-image: url(../image2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.image-text3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 100%;
+  margin: 20px;
+  background-image: url(../image6.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.image-text4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 100%;
+  margin: 20px;
+  background-image: url(../image7.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-text5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 100%;
+  margin: 20px;
+  background-image: url(../image\ 5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.image-text6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 100%;
+  margin: 20px;
+  background-image: url(../image8.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container img {
+  width: 100%;
+}
+/* end */
+
+
+
+
+
+ /* footer stuff */
+.bigbox {
+  display: flex;
+}
+
+.box5 {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.box5 p {
+  text-align: center;
+  color:black;
+}
+
+.box6 {
+  color:black;
+  margin-top: 0;
+}
+/* end of footer stuff*/
+
+
+
+
+/* mobile view stuff*/
+
+
+
